@@ -9,7 +9,7 @@ curl -k -X POST -H Content-Type:application/json -d @create-cluster.json https:/
 ```
 
 ```sh
-curl -sk -u "demo@redislabs.com:123456" -X GET -H Content-Type:application/json https://localhost:9443/v1/bootstrap | jq
+curl -sk -u demo@redislabs.com:123456 -X GET -H Content-Type:application/json https://localhost:9443/v1/bootstrap | jq
 ```
 
 ```sh
@@ -18,17 +18,17 @@ curl -k -X POST -H Content-Type:application/json -d @join-cluster.json https://1
 ```
 
 ```sh
-curl -sk -u "demo@redislabs.com:123456" -X GET -H Content-Type:application/json https://localhost:9443/v1/nodes | jq
+curl -sk -u demo@redislabs.com:123456 -X GET -H Content-Type:application/json https://localhost:9443/v1/nodes | jq
 ```
 
 ```sh
-curl -k -u "demo@redislabs.com:123456" -X POST -H Content-Type:application/json -d @create-sharded-oss-db.json https://localhost:9443/v1/bdbs
+curl -k -u demo@redislabs.com:123456 -X POST -H Content-Type:application/json -d @create-sharded-oss-db.json https://localhost:9443/v1/bdbs
 ```
 
 ```sh
-curl -k -u "demo@redislabs.com:123456" -X GET -H Content-Type:application/json https://localhost:9443/v1/bdbs | jq
+curl -k -u demo@redislabs.com:123456 -X GET -H Content-Type:application/json https://localhost:9443/v1/bdbs | jq
 ```
 
 ```sh
-curl -k -u "demo@redislabs.com:123456" -X DELETE -H Content-Type:application/json https://localhost:9443/v1/bdbs/2
+curl -k -u demo@redislabs.com:123456 -X DELETE -H Content-Type:application/json https://localhost:9443/v1/bdbs/2
 ```
