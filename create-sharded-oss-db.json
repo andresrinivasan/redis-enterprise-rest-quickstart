@@ -1,0 +1,17 @@
+{
+    "name": "mydb",
+    "memory_size": 10000000,
+    "replication": true,
+    "eviction_policy": "volatile-lru",
+    "sharding": true,
+    "shards_count": 2,
+    "rack_aware": false,
+    "type": "redis",
+    "oss_cluster": true,
+    "oss_sharding": true,
+    "proxy_policy": "all-master-shards",
+    "shards_placement": "sparse",
+    "port": 12000,
+    "data_persistence": "aof",
+    "aof_policy": "appendfsync-always"
+}

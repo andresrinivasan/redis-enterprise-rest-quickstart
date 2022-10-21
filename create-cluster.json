@@ -1,0 +1,16 @@
+{
+    "action": "create_cluster",
+    "cluster": {
+        "name": "foo.demo.redislabs.com"
+    },
+    "node": {
+        "paths": {
+            "persistent_path": "/var/opt/redislabs/persist",
+            "ephemeral_path": "/var/opt/redislabs/tmp"
+        }
+    },
+    "credentials": {
+        "username": "demo@redislabs.com",
+        "password": "123456"
+    }
+}
